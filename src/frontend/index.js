@@ -1,3 +1,5 @@
+import start from './start';
+
 // Neleisti vykdyti JS kodo toliau pasitaikius klaidai
 'use strict';
 
@@ -9,3 +11,5 @@ if (module.hot) {
 
 // Įtraukiami stiliai
 import '../styles/common.scss';
+
+start();
