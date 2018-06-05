@@ -2,6 +2,8 @@ import multiplication from './functions/multiplication';
 import division from './functions/division';
 import discount from './functions/discount';
 import discountText from './functions/discountText';
+import { lang } from './data/lang';
+import setText from './functions/setText';
 
 
 
@@ -32,9 +34,21 @@ export default function() {
     
     // Uzduotis Nr. 5
     document.getElementById("colorSelect").addEventListener('change', function(e){
-        //console.log(e.target.value);
-        document.getElementById("mainBody").style.backgroundColor = e.target.value;
+    //console.log(e.target.value);
+    document.getElementById("mainBody").style.backgroundColor = e.target.value;
     });
+    
+    // Uzduotis Nr. 6
+    document.getElementById("btnLangLt").addEventListener('click', function(e){
+        setText("lt");
+    });
+    document.getElementById("btnLangEn").addEventListener('click', function(e){
+        setText("en");
+    });
+    
+    
+    setText("lt");
+    console.log("lang", lang);
 
     // Toliau nekeisti
 
