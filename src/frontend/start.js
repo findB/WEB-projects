@@ -30,6 +30,11 @@ export default function() {
         }
     });
     
+    // Uzduotis Nr. 5
+    document.getElementById("colorSelect").addEventListener('change', function(e){
+        //console.log(e.target.value);
+        document.getElementById("mainBody").style.backgroundColor = e.target.value;
+    });
 
     // Toliau nekeisti
 
