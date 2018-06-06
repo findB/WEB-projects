@@ -6,6 +6,6 @@ export const lang = {
     },
     en: {
         "h1" : "Hello!",
-        "h2" : "We\'ve benn waiting for you."
+        "h2" : "We\'ve been waiting for you."
     }
 };
